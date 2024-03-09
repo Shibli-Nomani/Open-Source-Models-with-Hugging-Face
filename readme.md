@@ -15,7 +15,7 @@ https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330
 
 - Install Python pyenv
 
-- Install python 3.8.6 using pyenv (Pyevn cheat sheet added below)
+- Install python 3.10.8 using pyenv (Pyevn cheat sheet added below)
 
 - video link to install pyenv and python
 ```sh
