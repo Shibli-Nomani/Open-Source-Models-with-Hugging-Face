@@ -1,5 +1,9 @@
 # Open Source Models with Hugging Face
-
+- **👉 chatbot code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/chatbot.ipynb
+- **👉 text translation and text summarization code:** Open-Source-Models-with-Hugging-Face/notebooks
+/text translation and text summarization.ipynb
+- **👉 sentence embedding code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Sentence%20Embeddings.ipynb
+- 
 **🤗 Hugging Face Overview:**
 Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
 
