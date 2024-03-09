@@ -1,7 +1,7 @@
 # Open Source Models with Hugging Face
 - **👉 chatbot code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/chatbot.ipynb
-- **👉 text translation and text summarization code:** Open-Source-Models-with-Hugging-Face/notebooks
-/text translation and text summarization.ipynb
+- **👉 text translation and text summarization code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/text%20translation%20and%20text%20summarization.ipynb
+
 - **👉 sentence embedding code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Sentence%20Embeddings.ipynb
 - 
 **🤗 Hugging Face Overview:**
