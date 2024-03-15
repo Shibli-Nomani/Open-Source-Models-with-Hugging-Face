@@ -1,15 +1,26 @@
 # Open Source Models with Hugging Face
 
 ### Github 👇
-
+- **Text**
 - **👉 chatbot github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/chatbot.ipynb
 - **👉 text translation and text summarization github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/text%20translation%20and%20text%20summarization.ipynb
 - **👉 sentence embedding github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Sentence%20Embeddings.ipynb
 
+- **Audio**
+- **👉 audio classification real-world dataset github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/audio%20classification%20real-world%20dataset.ipynb
+- **👉 Automatic Speech Recognitions and Gradio apps github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Automatic%20Speech%20Recognitions%20and%20Gradio%20apps.ipynb
+- **👉 Text to Speech with VITS-Conditional Variational Autoencoder github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Text%20to%20Speech%20with%20VITS-Conditional%20Variational%20Autoencoder.ipynb
+
 #### Kaggle 👇
+- **Text**
 - **👉 chatbot kaggle code:** https://www.kaggle.com/code/shiblinomani/chatbot-with-hugging-face-model
 - **👉 text translation and text summarization kaggle code:** https://www.kaggle.com/code/shiblinomani/text-translation-summarization-with-hugging-face/notebook
 - **👉 sentence embedding kaggle code:** https://www.kaggle.com/code/shiblinomani/sentence-embedding-with-hugging-face-model/notebook
+  
+- **Audio**
+- **👉 audio classification real-world dataset kaggle code:** https://www.kaggle.com/code/shiblinomani/audio-classification-real-world-dataset/notebook
+- **👉 Automatic Speech Recognitions and Gradio apps kaggle code:** https://www.kaggle.com/code/shiblinomani/automatic-speech-recognitions-and-gradio-apps/notebook
+- **👉 Text to Speech with VITS-Conditional Variational Autoencoder kaggle code:** https://www.kaggle.com/code/shiblinomani/text-to-speech-with-vits-auto-encoder/notebook
   
 **🤗 Hugging Face Overview:**
 Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
