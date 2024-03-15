@@ -24,6 +24,11 @@
 
 
   
+- **Audio**
+- **👉 audio classification real-world dataset kaggle code:** https://www.kaggle.com/code/shiblinomani/audio-classification-real-world-dataset/notebook
+- **👉 Automatic Speech Recognitions and Gradio apps kaggle code:** https://www.kaggle.com/code/shiblinomani/automatic-speech-recognitions-and-gradio-apps/notebook
+- **👉 Text to Speech with VITS-Conditional Variational Autoencoder kaggle code:** https://www.kaggle.com/code/shiblinomani/text-to-speech-with-vits-auto-encoder/notebook
+  
 **🤗 Hugging Face Overview:**
 Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
 
