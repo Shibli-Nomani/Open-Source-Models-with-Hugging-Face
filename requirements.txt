@@ -6,4 +6,16 @@ scikit-learn
 scipy
 seaborn
 torch
+
 sentence-transformers
+
+datasets
+soundfile
+librosa
+
+#!pip install -U datasets
+gradio
+
+timm
+inflect
+phonemizer

@@ -15,7 +15,7 @@ https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330
 
 - Install Python pyenv
 
-- Install python 3.8.6 using pyenv (Pyevn cheat sheet added below)
+- Install python 3.10.8 using pyenv (Pyevn cheat sheet added below)
 
 - video link to install pyenv and python
 ```sh
@@ -190,3 +190,206 @@ Cosine similarity is crucial for tasks like information retrieval, document clus
 🔍 All-MiniLM-L6-v2 Overview:
 The All-MiniLM-L6-v2 sentence-transformers model efficiently maps sentences and paragraphs into a 384-dimensional dense vector space, facilitating tasks such as clustering or semantic search with ease.
 
+### 🤗 Task-04: Audio Classification
+
+**📛Zero-Shot:**
+
+"Zero-shot" refers to the fact that the model makes predictions without direct training on specific classes. Instead, it utilizes its understanding of general patterns learned during training on diverse data to classify samples it hasn't seen before. Thus, "zero-shot" signifies that the model doesn't require any training data for the specific classes it predicts.
+
+- **🤖 transformers:** This library provides access to cutting-edge pre-trained models for natural language processing (NLP), enabling tasks like **`text classification, language generation, and sentiment analysis`** with ease. It streamlines model implementation and fine-tuning, fostering rapid development of NLP applications.
+
+- **📊 datasets:** Developed by Hugging Face, this library offers a **`comprehensive collection of datasets`** for NLP tasks, simplifying data acquisition, preprocessing, and evaluation. It enhances reproducibility and facilitates experimentation by providing access to diverse datasets in various languages and domains.
+
+- **🔊 soundfile:** With functionalities for reading and writing audio files in Python, this library enables seamless audio processing for tasks such as **`speech recognition, sound classification, and acoustic modeling`**. It empowers users to handle audio data efficiently, facilitating feature extraction and analysis.
+
+- **🎵 librosa:** Specializing in **`music and sound analysis`**, this library provides tools for audio feature extraction, spectrogram computation, and pitch estimation. It is widely used in applications like **`music information retrieval, sound classification, and audio-based machine learning tasks`**, offering essential functionalities for audio processing projects.
+
+#### 🔊 Ashraq/ESC50 Dataset Overview:
+The Ashraq/ESC50 dataset is a collection of 2000 environmental sound recordings, categorized into 50 classes, designed for sound classification tasks. Each audio clip is 5 seconds long and represents various real-world environmental sounds, including animal vocalizations, natural phenomena, and human activities.
+
+##### 🌐 Libraries Installation
+
+`! pip install transformers`
+`!pip install datasets`
+`!pip install soundfile`
+`!pip install librosa`
+
+- 👉 model-4(clap-htsat-unfused ): https://huggingface.co/laion/clap-htsat-unfused/tree/main
+
+![alt text](image-9.png)
+
+🛠️ clap-htsat-unfused  offers a pipeline for contrastive language-audio pretraining, leveraging large-scale audio-text pairs from LAION-Audio-630K dataset.
+The model incorporates feature fusion mechanisms and keyword-to-caption augmentation, enabling processing of variable-length audio inputs.
+Evaluation across text-to-audio retrieval and audio classification tasks showcases its superior performance and availability for public use.
+
+
+
+![alt text](image-11.png)
+
+
+![alt text](image-10.png)
+
+##### 👤 Human Speech Recording: 16,000 Hz
+##### 📡 Walkie Talkie/Telephone: 8,000 Hz
+##### 🔊 High Resolution Audio: 192,000 Hz
+
+### 📌 key note for Audio Signal Processing:
+
+For 5 sec of video, **SIGNAL VALUE** is (5 x 8000) = 40,000
+
+In case of transformers, the **SIGNAL VALUE** relies on 🔆 Sequences and 🔆 Attention Mechanism..
+**SIGNAL VALUE** will look like 60 secs for 1 secs.
+
+In the case of transformers, particularly in natural language processing tasks, the **SIGNAL VALUE** is determined by the length of the 🔆input sequences and the 🔆 attention mechanism employed. Unlike traditional video processing, where each frame corresponds to a fixed time interval, in transformers, the **SIGNAL VALUE** may appear to be elongated due to the attention mechanism considering sequences of tokens. For example, if the attention mechanism processes 60 tokens per second, the **SIGNAL VALUE** for 1 second of input may appear equivalent to 60 seconds in terms of processing complexity.
+
+
+In natural language processing, the **input sequence** refers to a series of tokens representing words or characters in a text. The **attention mechanism in transformers** helps the model focus on relevant parts of the input sequence during processing by **assigning weights to each token**, allowing the model to **prioritize important information**. Think of it like giving more attention to key words in a sentence while understanding its context, aiding in tasks like translation and summarization.
+
+### 🤗 Task-05: Automatic Speech Recognation(ASR)
+
+##### 🌐 Libraries Installation
+
+`! pip install transformers`
+`!pip install datasets`
+`!pip install soundfile`
+`!pip install librosa`
+`!pip install gradio`
+
+- !pip install transformers: Access state-of-the-art natural language processing models and tools. 🤖
+- !pip install datasets: Simplify data acquisition and preprocessing for natural language processing tasks. 📊
+- !pip install soundfile: Handle audio data reading and writing tasks efficiently. 🔊
+- !pip install librosa: Perform advanced audio processing and analysis tasks. 🎵
+- !pip install gradio: Develop interactive web-based user interfaces for machine learning models. 🌐
+
+**Librosa** is a Python library designed for audio and music signal processing. It provides functionalities for tasks such as audio loading, feature extraction, spectrogram computation, pitch estimation, and more. Librosa is commonly used in applications such as music information retrieval, sound classification, speech recognition, and audio-based machine learning tasks.
+
+🎙️ LibriSpeech ASR: A widely-used dataset for automatic speech recognition (ASR), containing a large collection of English speech recordings derived from audiobooks. With over 1,000 hours of labeled speech data, it facilitates training and evaluation of ASR models for transcription tasks.
+
+👉 dataset: https://huggingface.co/datasets/librispeech_asr
+
+👉 model: https://huggingface.co/distil-whisper
+
+👉 model: https://github.com/huggingface/distil-whisper
+
+**🔍 Distil-Whisper:**
+
+Distil-Whisper, a distilled variant of Whisper, boasts 6 times faster speed, 49% smaller size, and maintains a word error rate (WER) within 1% on out-of-distribution evaluation sets. With options ranging from distil-small.en to distil-large-v2, it caters to diverse latency and resource constraints. 📈🔉
+
+  - Virtual Assistants
+  - Voice-Controlled Devices
+  - Dictation Software
+  - Mobile Devices
+  - Edge Computing Platforms
+  - Online Transcription Services
+
+### ✨ Gradio: 
+
+🛠️🚀 Build & Share Delightful Machine Learning Apps
+
+Gradio offers the fastest way to showcase your machine learning model, providing a user-friendly web interface that enables anyone to utilize it from any location!
+
+**👉 Gradio Website:** https://www.gradio.app/
+
+**👉 Gradio In Hugging Face:** https://huggingface.co/gradio
+
+**👉 Gradio Github:** https://github.com/gradio-app/gradio
+
+
+**🌐🛠️ Gradio: Develop Machine Learning Web Apps with Ease**
+
+Gradio, an open-source Python package, enables swift creation of demos or web apps for your ML models, APIs, or any Python function. Share your creations instantly using built-in sharing features, requiring no JavaScript, CSS, or web hosting expertise.
+
+![alt text](image-14.png)
+
+![alt text](image-13.png)
+
+**📌 error:** DuplicateBlockError: At least one block in this Blocks has already been rendered.
+
+**💉 solution:** change the `block name` that we have declared earlier.
+
+**`demonstrations = gr.Blocks()`**
+
+- **🚦 note:** The app will continue running unless you run **demo.close()**
+
+### Text to Speech
+
+#### Libraries Installation
+
+`!pip install transformers`
+`!pip install gradio`
+`!pip install timm`
+`!pip install timm`
+`!pip install inflect`
+`!pip install phonemizer`
+
+- **!pip install transformers:** Installs the Transformers library, which provides state-of-the-art natural language processing models for various tasks such as text classification, translation, summarization, and question answering.
+
+- **!pip install gradio:** Installs Gradio, a Python library that simplifies the creation of interactive web-based user interfaces for machine learning models, allowing users to interact with models via a web browser.
+
+- **!pip install timm:** Installs Timm, a PyTorch library that offers a collection of pre-trained models and a simple interface to use them, primarily focused on computer vision tasks such as image classification and object detection.
+
+- **!pip install inflect:** Installs Inflect, a Python library used for converting numbers to words, pluralizing and singularizing nouns, and generating ordinals and cardinals.
+
+- **!pip install phonemizer:** Installs Phonemizer, a Python library for converting text into phonetic transcriptions, useful for tasks such as text-to-speech synthesis and linguistic analysis.
+
+**📌Note:** py-espeak-ng is only available Linux operating systems.
+
+To run locally in a Linux machine, follow these commands:
+
+```sh
+  sudo apt-get update
+```
+```sh
+  sudo apt-get install espeak-ng
+```
+```sh
+  pip install py-espeak-ng
+```
+**📕 APT stands for Advanced Package Tool**. It is a package management system used by various Linux distributions, including Debian and Ubuntu. APT allows users to install, update, and remove software packages on their system from repositories. It also resolves dependencies automatically, ensuring that all required dependencies for a package are installed.
+
+
+- sudo apt-get update: Updates the package index of APT.
+- sudo apt-get install espeak-ng: Installs the espeak-ng text-to-speech synthesizer.
+- pip install py-espeak-ng: Installs the Python interface for espeak-ng.
+
+👉 model: https://github.com/huggingface/distil-whisper
+
+
+
+**🔍 kakao-enterprise/vits-ljs:**
+
+🔊📚 VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
+
+- Overview:
+
+VITS is an end-to-end model for speech synthesis, utilizing a conditional variational autoencoder (VAE) architecture. It predicts speech waveforms based on input text sequences, incorporating a flow-based module and a stochastic duration predictor to handle variations in speech rhythm.
+
+- Features:
+
+🔹 The model generates spectrogram-based acoustic features using a Transformer-based text encoder and coupling layers, allowing it to capture complex linguistic patterns.
+
+🔹 It includes a stochastic duration predictor, enabling it to synthesize speech with diverse rhythms from the same input text.
+
+- Training and Inference:
+
+🔹 VITS is trained with a combination of variational lower bound and adversarial training losses.
+
+🔹 Normalizing flows are applied to enhance model expressiveness.
+
+🔹 During inference, text encodings are up-sampled based on duration predictions and mapped into waveforms using a flow module and HiFi-GAN decoder.
+
+- Variants and Datasets:
+
+🔹 Two variants of VITS are trained on LJ Speech and VCTK datasets.
+
+🔹 LJ Speech comprises 13,100 short audio clips (approx. 24 hours), while VCTK includes approximately 44,000 short audio clips from 109 native English speakers (approx. 44 hours).
+
+
+👉 model: https://huggingface.co/kakao-enterprise/vits-ljs
+
+![alt text](image-15.png)
+
+### 📝🔊 Text to Audio Wave
+
+
+Text-to-audio waveform array for speech generation is the process of converting **textual input** into a **digital audio waveform** representation. This involves `synthesizing speech from text`, where a machine learning model translates written words into spoken language. The model analyzes the text, generates corresponding speech signals, and outputs an audio waveform array that can be played back as human-like speech. The benefits include enabling natural language processing applications such as virtual assistants, audiobook narration, and automated customer service, enhancing accessibility for visually impaired individuals, and facilitating audio content creation in various industries.
