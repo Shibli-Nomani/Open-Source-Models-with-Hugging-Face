@@ -1,5 +1,16 @@
 # Open Source Models with Hugging Face
 
+### Github 👇
+
+- **👉 chatbot github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/chatbot.ipynb
+- **👉 text translation and text summarization github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/text%20translation%20and%20text%20summarization.ipynb
+- **👉 sentence embedding github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Sentence%20Embeddings.ipynb
+
+#### Kaggle 👇
+- **👉 chatbot kaggle code:** https://www.kaggle.com/code/shiblinomani/chatbot-with-hugging-face-model
+- **👉 text translation and text summarization kaggle code:** https://www.kaggle.com/code/shiblinomani/text-translation-summarization-with-hugging-face/notebook
+- **👉 sentence embedding kaggle code:** https://www.kaggle.com/code/shiblinomani/sentence-embedding-with-hugging-face-model/notebook
+  
 **🤗 Hugging Face Overview:**
 Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
 
