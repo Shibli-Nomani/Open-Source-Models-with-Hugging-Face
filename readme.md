@@ -1,4 +1,8 @@
 # Open Source Models with Hugging Face
+**🤗 Hugging Face Overview:**
+Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
+
+![alt text](<Hugging Face.png>)
 
 ### Github 👇
 - **Text**
@@ -21,18 +25,8 @@
 - **👉 audio classification real-world dataset kaggle code:** https://www.kaggle.com/code/shiblinomani/audio-classification-real-world-dataset/notebook
 - **👉 Automatic Speech Recognitions and Gradio apps kaggle code:** https://www.kaggle.com/code/shiblinomani/automatic-speech-recognitions-and-gradio-apps/notebook
 - **👉 Text to Speech with VITS-Conditional Variational Autoencoder kaggle code:** https://www.kaggle.com/code/shiblinomani/text-to-speech-with-vits-auto-encoder/notebook
-
-
   
-- **Audio**
-- **👉 audio classification real-world dataset kaggle code:** https://www.kaggle.com/code/shiblinomani/audio-classification-real-world-dataset/notebook
-- **👉 Automatic Speech Recognitions and Gradio apps kaggle code:** https://www.kaggle.com/code/shiblinomani/automatic-speech-recognitions-and-gradio-apps/notebook
-- **👉 Text to Speech with VITS-Conditional Variational Autoencoder kaggle code:** https://www.kaggle.com/code/shiblinomani/text-to-speech-with-vits-auto-encoder/notebook
-  
-**🤗 Hugging Face Overview:**
-Hugging Face is a leading platform for natural language processing (NLP), offering a vast repository of pre-trained models, datasets, and tools, empowering developers and researchers to build innovative NLP applications with ease.
 
-![alt text](<Hugging Face.png>)
 
 ### 😸 Jupyter Notebook Shortcuts
 ```
@@ -422,6 +416,10 @@ VITS is an end-to-end model for speech synthesis, utilizing a conditional variat
 
 
 Text-to-audio waveform array for speech generation is the process of converting **textual input** into a **digital audio waveform** representation. This involves `synthesizing speech from text`, where a machine learning model translates written words into spoken language. The model analyzes the text, generates corresponding speech signals, and outputs an audio waveform array that can be played back as human-like speech. The benefits include enabling natural language processing applications such as virtual assistants, audiobook narration, and automated customer service, enhancing accessibility for visually impaired individuals, and facilitating audio content creation in various industries.
+
+**`{'audio': array([[ 0.00112925,  0.00134222,  0.00107496, ..., -0.00083117,  -0.00077596, -0.00064528]], dtype=float32), 'sampling_rate': 22050}`**
+
+**📌note:** This dictionary contains an audio waveform represented as a NumPy array, along with its corresponding sampling rate. 🎵 The audio array consists of amplitude values sampled at a rate of 22,050 Hz.
 
 **`{'audio': array([[ 0.00112925,  0.00134222,  0.00107496, ..., -0.00083117,  -0.00077596, -0.00064528]], dtype=float32), 'sampling_rate': 22050}`**
 
