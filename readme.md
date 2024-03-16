@@ -15,6 +15,9 @@ Hugging Face is a leading platform for natural language processing (NLP), offeri
 - **👉 Automatic Speech Recognitions and Gradio apps github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Automatic%20Speech%20Recognitions%20and%20Gradio%20apps.ipynb
 - **👉 Text to Speech with VITS-Conditional Variational Autoencoder github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Text%20to%20Speech%20with%20VITS-Conditional%20Variational%20Autoencoder.ipynb
 
+- **Image**
+- **👉 Object Detection And Generate Audio Based On Detection github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Object%20Detection%20with%20detr-resnet-50%20and%20gradio.ipynb
+
 #### Kaggle 👇
 - **Text**
 - **👉 chatbot kaggle code:** https://www.kaggle.com/code/shiblinomani/chatbot-with-hugging-face-model
