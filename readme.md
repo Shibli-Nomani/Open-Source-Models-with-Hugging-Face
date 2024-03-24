@@ -501,3 +501,210 @@ VITS is an end-to-end model for speech synthesis, utilizing a conditional variat
 
 
 ![alt text](hld-image-to-audio.jpg)
+
+
+### 🤗 Task-08: Image Segmentation
+
+Image segmentation involves dividing an image into multiple segments, each representing a distinct object or region. This process is crucial for various applications, as it simplifies image analysis and enhances understanding.
+
+- 🏥 Medical Imaging: Used to identify tumors or anomalies in MRI or CT scans, aiding diagnosis and treatment planning.
+
+- 🚗 Autonomous Vehicles: Enables object detection and obstacle avoidance, crucial for safe navigation on roads.
+
+- 🌍 Satellite Imagery: Facilitates land cover classification, assisting in urban planning, agriculture, and environmental monitoring.
+
+- In each of these examples, image segmentation plays a vital role in extracting meaningful information from complex visual data, contributing to advancements in healthcare, transportation, and environmental science.
+
+#### Libraries Installation
+
+`!pip install transformers`
+`!pip install gradio`
+`!pip install timm`
+`!pip install torchvision`
+
+`torch`
+
+- **!pip install transformers:** Installs the Transformers library, which provides state-of-the-art natural language processing models for various tasks such as text classification, translation, summarization, and question answering.
+
+- **!pip install gradio:** Installs Gradio, a Python library that simplifies the creation of interactive web-based user interfaces for machine learning models, allowing users to interact with models via a web browser.
+
+- **!pip install timm:** Installs Timm, a PyTorch library that offers a collection of pre-trained models and a simple interface to use them, primarily focused on computer vision tasks such as image classification and object detection.
+
+- **!pip install torchvision:** is used to install the torchvision library, facilitating computer vision tasks in Python environments.
+
+
+
+👉 model: https://huggingface.co/Zigeng/SlimSAM-uniform-77
+
+**🔍 Segmentation Anything Model (SAM)** is a versatile deep learning architecture 🧠🖼️ designed for pixel-wise segmentation tasks, capable of accurately delineating objects within images for various applications such as object detection, medical imaging, and autonomous driving.
+
+
+![alt text](image-23.png)
+
+**🔍 SlimSAM:**
+
+SlimSAM, a novel SAM compression method, efficiently reuses pre-trained SAMs through a unified pruning-distillation framework and **employs masking for selective parameter retention**. By integrating an innovative alternate slimming strategy and a label-free pruning criterion, SlimSAM reduces parameter counts to 0.9%, MACs to 0.8%, and requires only 0.1% of the training data compared to the original SAM-H. Extensive experiments demonstrate superior performance with over 10 times less training data usage compared to other SAM compression methods.
+
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+
+**Masking in SlimSAM** selectively retains crucial parameters, enabling efficient compression of pre-trained SAMs without sacrificing performance, by focusing on essential features and discarding redundancies.
+
+##### 🎨 Segmentation Mask Generation
+
+ Segmentation mask generation involves creating pixel-wise masks that delineate different objects or regions within an image. For example, in a photo of various fruits 🍎🍌, segmentation masks would outline each fruit separately, aiding in their identification and analysis.
+
+
+
+**💡 Key Notes:**
+
+**`points_per_batch = 32`** in image processing denotes the number of pixel points considered in each batch during model training or inference 🖼️, aiding in efficient computation of gradients and optimization algorithms, thereby enhancing training speed and resource utilization.
+
+**📌 note:** for smaller size in `points_per_batch` is lesser accuracy but less computationally expensive.
+
+##### Raw image
+
+![alt text](image-25.png)
+
+##### Image after Segmetation:
+
+![alt text](image-24.png)
+
+##### 🔍 Use SlimSAM(Segment Anything Model) without Pipeline
+
+- 🧠 The model variable initializes a SlimSAM model instance loaded from pre-trained weights 🧠🔗 located at "./models/Zigeng/SlimSAM-uniform-77", enabling tasks like inference or fine-tuning.
+
+- 🔗 The processor variable initializes a SamProcessor instance loaded with pre-trained settings 🛠️🔗 located at "./models/Zigeng/SlimSAM-uniform-77", facilitating data preprocessing for compatibility with the SlimSAM model during inference or fine-tuning processes.
+
+- 🛠️ Pretrained settings encompass pre-defined configurations or parameters obtained from training a model 🧠🔗, facilitating effective performance in related tasks with minimal fine-tuning or adjustment.
+
+##### Import Libraries
+`import torch`
+
+**📌 note:** 
+
+**no_grad** runs the model inference without tracking operations for gradient computation, thereby conserving memory resources and speeding up the inference process.
+
+```python
+with torch.no_grad(): 
+  outputs = model(**inputs)
+```
+
+**Gradient computation 📈** refers to calculating the derivatives of a loss function with respect to the model parameters, crucial for updating weights during training. These gradients indicate the direction and magnitude of parameter updates needed to minimize the loss during training through optimization algorithms like gradient descent.
+
+### 🤗 DPT
+
+
+DPT (Dense Pretrained Transformer) enhances dense prediction tasks using Vision Transformer (ViT) as its backbone. It provides finer-grained predictions compared to fully-convolutional networks, yielding substantial improvements in performance, especially with large training data. DPT achieves state-of-the-art results in tasks like monocular depth estimation and semantic segmentation on datasets like ADE20K, NYUv2, KITTI, and Pascal Context.
+
+
+👉 model: https://huggingface.co/docs/transformers/model_doc/dpt
+
+👉 model in Github: https://github.com/isl-org/DPT
+
+👉 research paper of model : https://arxiv.org/abs/2103.13413
+
+
+![alt text](image-26.png)
+
+##### Intel/dpt-hybrid-midas: 
+
+DPT-Hybrid, also known as MiDaS 3.0, is a monocular depth estimation model based on the Dense Prediction Transformer (DPT) architecture, utilizing a Vision Transformer (ViT) backbone with additional components for enhanced performance. Trained on 1.4 million images, it offers accurate depth predictions for various applications such as autonomous navigation, augmented reality, and robotics, providing crucial depth perception for tasks like obstacle avoidance, scene understanding, and 3D reconstruction.
+
+
+👉 model: https://huggingface.co/Intel/dpt-hybrid-midas
+
+![alt text](image-27.png)
+
+##### Demo with Garido Apps
+
+
+![alt text](image-28.png)
+
+### 🤗 Task-09: Image to Text Retrieval 
+
+- **🌐📸🔊 Multimodal**
+
+Multimodal models 🌐📸🔊 are machine learning architectures designed to process and integrate information from multiple modalities, such as text, images, audio, and other data types, into a cohesive representation. These models utilize various techniques like `fusion mechanisms`, `attention mechanisms`, and `cross-modal learning` to capture rich interactions between different modalities, enabling them to perform tasks like image captioning, video understanding, and more, by leveraging the complementary information present across different modalities.
+
+- Fusion mechanisms 🔄: Techniques to combine information from different modalities, like averaging features from text and images to make a unified representation.
+
+- Attention mechanisms 👀: Mechanisms that focus on relevant parts of each modality's input, like attending to specific words in a sentence and regions in an image.
+
+- Cross-modal learning 🧠💡: Learning strategies where information from one modality helps improve understanding in another, like using audio features to enhance image recognition accuracy.
+
+**🚵 Application:** ChatGPT --> SEE, HEAR AND SPEAK
+
+![alt text](image-29.png)
+
+#### Bootstrapping Language-Image Pre-training🌐📸📝
+
+BLIP Model: Proposed in BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation by Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi.
+
+**Tasks: BLIP excels in various multi-modal tasks such as:**
+
+- Visual Question Answering 🤔➡️📸
+- Image-Text Retrieval (Image-text matching) 🔎🖼️📝
+- Image Captioning 🖼️📝
+
+- Abstract: BLIP is a versatile VLP framework adept at both understanding and generation tasks. It effectively utilizes noisy web data through bootstrapping captions, resulting in state-of-the-art performance across vision-language tasks.
+
+👉 model: https://huggingface.co/docs/transformers/model_doc/blip
+
+👉 model: https://huggingface.co/Salesforce/blip-itm-base-coco
+
+![alt text](image-30.png)
+
+### 🌐💼 About Salesforce AI
+
+Salesforce AI Research is dedicated to pioneering AI advancements to revolutionize our company, customers, and global communities 🚀. Their innovative products harness AI to enhance customer relationship management, optimize sales processes, and drive business intelligence, empowering organizations to thrive in the digital era 🌐💼.
+
+**👉 model:** https://huggingface.co/Salesforce/blip-itm-base-coco
+
+BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation
+Model card for BLIP trained on **`image-text matching`** - base architecture (with ViT base backbone) trained on COCO dataset.
+
+![alt text](image-31.png)
+
+#### Libraries Installation
+
+`!pip install transformers`
+
+`!pip install torch`
+
+- **AutoProcessor 📊🤖** is a comprehensive tool developed by Salesforce AI Research to automate and streamline data processing tasks 🛠️. It efficiently handles data extraction, transformation, and loading processes, accelerating data-driven decision-making and improving operational efficiency across various domains such as sales, marketing, and customer service.
+
+#### 🛠️ pt stands for pytorch
+
+```
+inputs = processor(images = raw_images,
+                   text = text,
+                   return_tensors = "pt"
+        )
+```
+
+#### 🚴 Code Snippits: 
+
+
+```
+itm_scores = model(**inputs)[0]
+```
+
+- model(**inputs): This calls the model with the provided inputs. The **inputs syntax in Python unpacks the dictionary inputs and passes its contents as keyword arguments to the model function.
+
+- [0]: This accesses the first element of the output returned by the model. The output is likely a tuple or a list containing various elements, and [0] retrieves the first element.
+
+- itm_scores: This assigns the result obtained from step 2 to the variable itm_scores, which likely contains the predicted scores for different classes.
+
+**📌 note:** To open a raw image
+
+- images.jpg (image name with directory)
+  
+
+```
+raw_image = Image.open("images.jpg")
+raw_image
+```
