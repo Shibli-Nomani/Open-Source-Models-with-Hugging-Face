@@ -619,7 +619,7 @@ DPT-Hybrid, also known as MiDaS 3.0, is a monocular depth estimation model based
 
 ![alt text](image-27.png)
 
-##### Demo with Garido Apps
+##### Demo with Graido Apps
 
 
 ![alt text](image-28.png)
