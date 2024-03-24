@@ -17,6 +17,8 @@ Hugging Face is a leading platform for natural language processing (NLP), offeri
 
 - **Image**
 - **👉 Object Detection And Generate Audio Based On Detection github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Object%20Detection%20with%20detr-resnet-50%20and%20gradio.ipynb
+- **👉 image segmentation, image depth and Garido Apps:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/image%20segmentation%2C%20image%20depth%20and%20Garido%20Apps.ipynb
+- **👉 image Retrieval:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Image-Text%20Retrieval.ipynb
 
 #### Kaggle 👇
 - **Text**
@@ -28,7 +30,9 @@ Hugging Face is a leading platform for natural language processing (NLP), offeri
 - **👉 audio classification real-world dataset kaggle code:** https://www.kaggle.com/code/shiblinomani/audio-classification-real-world-dataset/notebook
 - **👉 Automatic Speech Recognitions and Gradio apps kaggle code:** https://www.kaggle.com/code/shiblinomani/automatic-speech-recognitions-and-gradio-apps/notebook
 - **👉 Text to Speech with VITS-Conditional Variational Autoencoder kaggle code:** https://www.kaggle.com/code/shiblinomani/text-to-speech-with-vits-auto-encoder/notebook
-  
+
+-**Image**
+- **👉 image Retrieval:** https://www.kaggle.com/code/shiblinomani/image-text-retrieval-with-hugging-face-models/notebook
 
 
 ### 😸 Jupyter Notebook Shortcuts
