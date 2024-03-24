@@ -19,3 +19,12 @@ gradio
 timm
 inflect
 phonemizer
+
+
+#Task-8
+transformers
+gradio
+timm
+torchvision
+
+#Task-9
