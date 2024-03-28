@@ -725,7 +725,9 @@ Real-life Use: Image captioning is employed in social media platforms like Insta
 
 
 👉 model: https://huggingface.co/Salesforce/blip-image-captioning-base
-![alt text](image-32.png)
+
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/cee07726-1e74-4c8c-b200-8672ef43f014)
+
 
 - Salesforce AI Research is dedicated to pioneering AI advancements to revolutionize our company, customers, and global communities 🚀. Their innovative products harness AI to enhance customer relationship management, optimize sales processes, and drive business intelligence, empowering organizations to thrive in the digital era 🌐💼.
 
