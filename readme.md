@@ -726,8 +726,7 @@ Real-life Use: Image captioning is employed in social media platforms like Insta
 
 👉 model: https://huggingface.co/Salesforce/blip-image-captioning-base
 
-![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/cee07726-1e74-4c8c-b200-8672ef43f014)
-
+![alt text](image-37.png)
 
 - Salesforce AI Research is dedicated to pioneering AI advancements to revolutionize our company, customers, and global communities 🚀. Their innovative products harness AI to enhance customer relationship management, optimize sales processes, and drive business intelligence, empowering organizations to thrive in the digital era 🌐💼.
 
@@ -753,4 +752,71 @@ print(processor.decode(outputs[0], skip_special_tokens = True))
 
 
 ![alt text](image-35.png)
+
+
+### 🤗 Task-11: Visual Questions and Answerings
+
+
+**Visual question answering (VQA)👁️💬** is a task in artificial intelligence where systems are designed to answer questions about images. It involves combining computer vision and natural language processing techniques.
+
+- Icons:
+
+  - 👁️ for computer vision
+  - 💬 for natural language processing
+
+- Use Cases:
+
+  - E-commerce: Users can ask about product details from images.
+  - Healthcare: Clinicians can inquire about abnormalities in medical images for diagnosis.
+
+- **Self-attention:** Useful in tasks requiring capturing global dependencies within a sequence, such as sentiment analysis or document classification.
+
+- **Cross-attention:** Beneficial in tasks where relationships between elements from two different sequences are crucial, like in machine translation or summarization.
+
+- **Bi-directional self-attention:**** Enhances contextual understanding in tasks like language understanding or sequence generation.
+- 
+- **Causal self-attention:** Ensures that the model generates outputs sequentially and is beneficial in tasks like autoregressive generation, where the order of elements matters.
+
+##### 😬 Distinguishing Factors:
+
+- Self-attention attends within a single sequence.
+- Cross-attention attends between two different sequences.
+- Bi-directional self-attention attends bidirectionally within a single sequence.
+- Causal self-attention attends in a unidirectional, causal manner within a single sequence.
+
+##### Self-attention: 🔄
+
+Example: In a VQA model, each region of an image attends to other regions and words in the question to understand the visual context and answer the question accurately. For instance, if the question is "What color is the car?" and the image contains multiple cars, self-attention helps the model focus on the relevant car region while considering the question.
+
+##### Cross-attention: ↔️🔍
+
+Example: In VQA, the question embeddings attend to different regions of the image, enabling the model to focus on relevant visual information corresponding to the words in the question. For example, if the question is "How many people are there?" the model's attention mechanism would focus on regions representing people in the image.
+
+##### Bi-directional self-attention: ↔️🔄
+
+Example: In VQA, each region of an image attends to all other regions as well as words in the question, allowing the model to capture both intra-modal (visual) and inter-modal (visual-textual) relationships effectively. For instance, when asked "What is the person holding?" the model can attend to both the person's hand region and the corresponding words describing the action in the question.
+
+##### Causal self-attention: 🔄🔍
+
+Example: In VQA tasks with sequential processing, each word in the question attends only to preceding words and relevant regions of the image, ensuring that the model generates answers sequentially while maintaining the context of the question and the image. For instance, if the question is "What is the color of the sky?" the model would attend to preceding words and relevant sky regions to generate the answer progressively.
+
+##### BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation
+
+BLIP (Bootstrapping Language-Image Pre-training) is a novel framework for Vision-Language Pre-training (VLP), enhancing performance across understanding and generation tasks. By intelligently utilizing noisy web data through bootstrapping captions—where a captioner generates synthetic captions filtered for noise—BLIP achieves state-of-the-art results in various tasks like image-text retrieval, image captioning, and VQA. It also exhibits strong generalization when applied to video-language tasks in a zero-shot manner. 🚀🖼️📝
+
+👉 model: https://huggingface.co/Salesforce/blip-vqa-base
+
+![alt text](image-36.png)
+
+### 🎯 Image: 
+
+![alt text](image-38.png)
+
+### 🎯 Ask Question: 
+
+<h4>questions= "How many dogs are in picture?"</h4>
+
+### 🎯 Output Result:
+
+<h4>dog and woman</h4>
 
