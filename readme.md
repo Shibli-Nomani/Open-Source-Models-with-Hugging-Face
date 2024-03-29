@@ -619,12 +619,6 @@ DPT-Hybrid, also known as MiDaS 3.0, is a monocular depth estimation model based
 
 ![alt text](image-27.png)
 
-<<<<<<< HEAD
-##### Demo with Gradio Apps
-=======
-##### Demo with Graido Apps
->>>>>>> 8605345bfa0f8836827cf257cdd78fddd8b9bd13
-
 
 ![alt text](image-28.png)
 
@@ -806,13 +800,11 @@ BLIP (Bootstrapping Language-Image Pre-training) is a novel framework for Vision
 
 👉 model: https://huggingface.co/Salesforce/blip-vqa-base
 
-![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/124bcc93-a4a3-4be7-996d-8bf20093d5c9)
-
+![alt text](image-36.png)
 
 ### 🎯 Image: 
 
-![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/32ecd483-53aa-46c1-aca5-6bcbb18a5602)
-
+![alt text](image-38.png)
 
 ### 🎯 Ask Question: 
 
@@ -821,4 +813,52 @@ BLIP (Bootstrapping Language-Image Pre-training) is a novel framework for Vision
 ### 🎯 Output Result:
 
 <h4>dog and woman</h4>
+
+### 🤗 Task-12: Zero Shot Image Classification
+
+**😉 Zero Shot Image Classification**
+
+In a zero-shot image classification scenario with dogs and cats, imagine training a model on a dataset containing images of various dog breeds and cat breeds. During training, the model learns to associate visual features of these animals with their respective class labels (e.g., "Labrador Retriever," "Siamese Cat").
+
+Now, suppose the model encounters images of new dog and cat breeds during inference that it has never seen before, such as "Pomeranian" or "Maine Coon." In a zero-shot setting, the model can still classify these images accurately without specific training examples of these breeds.
+
+This is achieved by providing the model with additional information about the classes, such as textual descriptions or class attributes. For example, the model might learn that Pomeranians are small-sized dogs with fluffy coats, while Maine Coon cats are large-sized cats with tufted ears and bushy tails.
+
+
+**🎯note: Zero-shot learning relies on the model's ability to generalize from known classes to unseen classes based on semantic embeddings or attributes associated with those classes.**
+
+![alt text](image-39.png)
+
+##### 🌟 CLIP (Constructive Language-Image Pre-Training)
+
+CLIP, developed by OpenAI, is a model that learns from both images and text to understand the world. It's trained to recognize patterns in pictures and words together, helping it to classify images even when it hasn't seen them before. However, it's not meant for all kinds of tasks and needs to be carefully studied before using it in different situations. It can be helpful in tasks like image search, where you describe what you're looking for in words, and the model finds matching images.
+
+👉 model: https://huggingface.co/openai/clip-vit-large-patch14
+
+![alt text](image-40.png)
+
+### 🎯 Image: 
+
+![alt text](image-42.png)
+
+### 🎯 Labels: 
+
+**labels = ["A Photo of Cat", "A Photo of Dog"]**
+
+### 🎯 Outputs: 
+```pyton
+outputs.logits_per_image
+```
+```pyton
+probs = outputs.logits_per_image.softmax(dim=1)[0]
+
+print(f"probs : {probs}")
+```
+```pyton
+probs = list(probs)
+for i in range(len(labels)):
+  print(f"label: {labels[i]} - probability of {probs[i].item():.4f}")
+```
+
+![alt text](image-41.png)
 
