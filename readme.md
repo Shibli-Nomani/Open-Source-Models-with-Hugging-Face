@@ -19,6 +19,9 @@ Hugging Face is a leading platform for natural language processing (NLP), offeri
 - **👉 Object Detection And Generate Audio Based On Detection github code:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Object%20Detection%20with%20detr-resnet-50%20and%20gradio.ipynb
 - **👉 image segmentation, image depth and Garido Apps:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/image%20segmentation%2C%20image%20depth%20and%20Garido%20Apps.ipynb
 - **👉 image Retrieval:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Image-Text%20Retrieval.ipynb
+- **👉 Image Captioning:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Image%20Captioning.ipynb
+- **👉 Visual Questions and Answering:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Visual%20Questions%20and%20Answering.ipynb
+- **👉 Zero-Shot Image Classification:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Zero-Shot%20Image%20Classification%20with%20CLIP.ipynb
 
 #### Kaggle 👇
 - **Text**
@@ -33,7 +36,10 @@ Hugging Face is a leading platform for natural language processing (NLP), offeri
 
 -**Image**
 - **👉 image Retrieval:** https://www.kaggle.com/code/shiblinomani/image-text-retrieval-with-hugging-face-models/notebook
-
+- **👉 image Retrieval:** https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/blob/main/notebooks/Image-Text%20Retrieval.ipynb
+- **👉 Image Captioning:** https://www.kaggle.com/code/shiblinomani/image-captioning-with-hugging-face-models
+- **👉 Visual Questions and Answering:** https://www.kaggle.com/shiblinomani/visual-questions-and-answering-vqa
+- **👉 Zero-Shot Image Classification:** https://www.kaggle.com/shiblinomani/zero-shot-image-classification-with-clip
 
 ### 😸 Jupyter Notebook Shortcuts
 ```
