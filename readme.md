@@ -800,11 +800,12 @@ BLIP (Bootstrapping Language-Image Pre-training) is a novel framework for Vision
 
 👉 model: https://huggingface.co/Salesforce/blip-vqa-base
 
-![alt text](image-36.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/79a52d7e-11d3-46d1-9a26-1feee2d13915)
 
 ### 🎯 Image: 
 
-![alt text](image-38.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/2580ef0f-78f5-4391-abf7-126ed6f35629)
+
 
 ### 🎯 Ask Question: 
 
