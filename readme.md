@@ -864,5 +864,6 @@ for i in range(len(labels)):
   print(f"label: {labels[i]} - probability of {probs[i].item():.4f}")
 ```
 
-![alt text](image-41.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/a3d5bef3-c122-479b-8cb2-93922111a1a5)
+
 
