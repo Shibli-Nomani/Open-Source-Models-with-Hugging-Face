@@ -828,7 +828,8 @@ This is achieved by providing the model with additional information about the cl
 
 **🎯note: Zero-shot learning relies on the model's ability to generalize from known classes to unseen classes based on semantic embeddings or attributes associated with those classes.**
 
-![alt text](image-39.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/5af39874-a003-48e8-b797-b4a0b6f1c055)
+
 
 ##### 🌟 CLIP (Constructive Language-Image Pre-Training)
 
@@ -836,11 +837,13 @@ CLIP, developed by OpenAI, is a model that learns from both images and text to u
 
 👉 model: https://huggingface.co/openai/clip-vit-large-patch14
 
-![alt text](image-40.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/ac9133bd-4c47-432c-a204-914726b3a9ef)
+
 
 ### 🎯 Image: 
 
-![alt text](image-42.png)
+![image](https://github.com/Shibli-Nomani/Open-Source-Models-with-Hugging-Face/assets/101654553/f3706a62-57b7-481f-a6ce-def309c3a49a)
+
 
 ### 🎯 Labels: 
 
